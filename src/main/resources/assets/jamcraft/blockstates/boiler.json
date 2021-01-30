@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "heated=false": { "model": "jamcraft:block/boiler" },
+    "heated=true": { "model": "jamcraft:block/boiler_heated" }
+  }
+}

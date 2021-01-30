@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jamcraft:item/golden_apple_jam_jar"
+  }
+}

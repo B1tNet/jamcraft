@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jamcraft:item/enchanted_golden_apple_jam_bucket"
+  }
+}
