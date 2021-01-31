@@ -22,13 +22,20 @@
  * SOFTWARE.
  */
 
-package dev.bitnet.jamcraft.util;
+package dev.bitnet.jamcraft.item;
 
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import dev.bitnet.jamcraft.init.ModItems;
+import dev.bitnet.jamcraft.util.ModSetup;
+import net.minecraft.item.Food;
+import net.minecraft.item.Item;
 
-public class ClientSetup {
-
-    public static void init(final FMLClientSetupEvent event) {
-
+public class JamJarItem extends Item {
+    public JamJarItem(Food foodIn) {
+        super(new Item.Properties()
+                .food(foodIn)
+                .group(ModSetup.itemGroup)
+                .maxStackSize(16)
+                .containerItem(ModItems.JAR.get())
+        );
     }
 }

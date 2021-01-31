@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:pumpkin"
+    },
+    {
+      "item": "jamcraft:iron_knife"
+    }
+  ],
+  "result": {
+    "item": "jamcraft:pumpkin_slice",
+    "count": 9
+  }
+}

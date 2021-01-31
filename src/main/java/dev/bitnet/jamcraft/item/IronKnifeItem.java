@@ -22,13 +22,28 @@
  * SOFTWARE.
  */
 
-package dev.bitnet.jamcraft.util;
+package dev.bitnet.jamcraft.item;
 
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import dev.bitnet.jamcraft.util.ModSetup;
+import net.minecraft.item.*;
 
-public class ClientSetup {
+public class IronKnifeItem extends SwordItem {
+    public IronKnifeItem() {
+        super(ItemTier.IRON, 3, -3f, new Item.Properties()
+                .group(ModSetup.itemGroup)
+        );
+    }
 
-    public static void init(final FMLClientSetupEvent event) {
+    @Override
+    public boolean hasContainerItem(ItemStack stack) {
+        return true;
+    }
 
+    @Override
+    public ItemStack getContainerItem(ItemStack itemStack) {
+        ItemStack stack = itemStack.copy();
+        stack.setDamage(itemStack.getDamage() + 1);
+
+        return stack;
     }
 }
