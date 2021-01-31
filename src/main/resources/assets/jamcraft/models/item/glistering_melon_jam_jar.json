@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jamcraft:item/glistering_melon_jam_jar"
+  }
+}

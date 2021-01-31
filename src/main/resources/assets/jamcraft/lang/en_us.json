@@ -17,6 +17,7 @@
   "item.jamcraft.pumpkin_jam_jar": "Jar of Pumpkin Jam",
   "item.jamcraft.beetroot_jam_jar": "Jar of Beetroot Jam",
   "item.jamcraft.potato_jam_jar": "Jar of Potato Jam",
+  "item.jamcraft.glistering_melon_jam_jar": "Jar of Glistering Melon Jam",
 
   "item.jamcraft.chorus_fruit_jam_bucket": "Bucket of Chorus Fruit Jam",
   "item.jamcraft.golden_apple_jam_bucket": "Bucket of Golden Apple Jam",
@@ -29,6 +30,7 @@
   "item.jamcraft.pumpkin_jam_bucket": "Bucket of Pumpkin Jam",
   "item.jamcraft.beetroot_jam_bucket": "Bucket of Beetroot Jam",
   "item.jamcraft.potato_jam_bucket": "Bucket of Potato Jam",
+  "item.jamcraft.glistering_melon_jam_bucket": "Bucket of Glistering Melon Jame",
 
   "block.jamcraft.boiler": "Boiler",
   "block.jamcraft.chorus_fruit_jam": "Chorus Fruit Jam",
@@ -42,6 +44,7 @@
   "block.jamcraft.pumpkin_jam": "Pumpkin Jam",
   "block.jamcraft.beetroot_jam": "Beetroot Jam",
   "block.jamcraft.potato_jam": "Potato Jam",
+  "block.jamcraft.glistering_melon_jam": "Glistering Melon Jam",
 
   "container.jamcraft.boiler": "Boiler"
 }

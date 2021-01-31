@@ -18,6 +18,7 @@
 
 package dev.bitnet.jamcraft;
 
+import dev.bitnet.jamcraft.init.ModItems;
 import dev.bitnet.jamcraft.util.ClientSetup;
 import dev.bitnet.jamcraft.util.ModSetup;
 import net.minecraftforge.common.MinecraftForge;
@@ -36,6 +37,8 @@ public class Jamcraft {
 
     private static final Logger LOGGER = LogManager.getLogger();
 
+    public static final String MODID = "jamcraft";
+
     public Jamcraft() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(ModSetup::init);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
@@ -45,6 +48,8 @@ public class Jamcraft {
         MinecraftForge.EVENT_BUS.register(this);
 
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.ITEMS.register(bus);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event) {

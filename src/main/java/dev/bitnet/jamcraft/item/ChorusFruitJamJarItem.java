@@ -16,23 +16,12 @@
  *     along with Jamcraft.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package dev.bitnet.jamcraft.util;
+package dev.bitnet.jamcraft.item;
 
-import dev.bitnet.jamcraft.init.ModItems;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import dev.bitnet.jamcraft.init.ModFoods;
 
-public class ModSetup {
-
-    public static final ItemGroup itemGroup = new ItemGroup("jamcraft") {
-        @Override
-        public ItemStack createIcon() {
-            return new ItemStack(ModItems.JAR.get());
-        }
-    };
-
-    public static void init(final FMLCommonSetupEvent event) {
-
+public class ChorusFruitJamJarItem extends BaseJamJarItem{
+    public ChorusFruitJamJarItem() {
+        super(ModFoods.CHORUS_FRUIT_JAM_JAR);
     }
 }
