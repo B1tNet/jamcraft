@@ -32,6 +32,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> JAR = ITEMS.register("jar", () -> new Item(new Item.Properties().group(ModSetup.itemGroup)));
 
+    public static final RegistryObject<Item> CHORUS_FRUIT_JAM_BALL = ITEMS.register("chorus_fruit_jam_ball", () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> APPLE_JAM_JAR = ITEMS.register("apple_jam_jar", () -> new BaseJamJarItem(ModFoods.APPLE_JAM_JAR));
     public static final RegistryObject<Item> BEETROOT_JAM_JAR = ITEMS.register("beetroot_jam_jar", () -> new BaseJamJarItem(ModFoods.BEETROOT_JAM_JAR));
     public static final RegistryObject<Item> CARROT_JAM_JAR = ITEMS.register("carrot_jam_jar", () -> new BaseJamJarItem(ModFoods.CARROT_JAM_JAR));

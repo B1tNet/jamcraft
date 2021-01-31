@@ -18,6 +18,7 @@
 
 package dev.bitnet.jamcraft.item;
 
+import dev.bitnet.jamcraft.init.ModItems;
 import dev.bitnet.jamcraft.util.ModSetup;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
@@ -28,6 +29,7 @@ public class BaseJamJarItem extends Item {
                 .food(foodIn)
                 .group(ModSetup.itemGroup)
                 .maxStackSize(16)
+                .containerItem(ModItems.JAR.get())
         );
     }
 }
