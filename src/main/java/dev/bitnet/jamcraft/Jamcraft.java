@@ -24,7 +24,9 @@
 
 package dev.bitnet.jamcraft;
 
+import dev.bitnet.jamcraft.init.ModBlocks;
 import dev.bitnet.jamcraft.init.ModItems;
+import dev.bitnet.jamcraft.init.ModTileEntityTypes;
 import dev.bitnet.jamcraft.util.ClientSetup;
 import dev.bitnet.jamcraft.util.ModSetup;
 import net.minecraftforge.common.MinecraftForge;
@@ -56,6 +58,9 @@ public class Jamcraft {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.ITEMS.register(bus);
+        ModBlocks.BLOCKS.register(bus);
+        ModBlocks.BLOCK_ITEMS.register(bus);
+        ModTileEntityTypes.TILE_ENTITY_TYPES.register(bus);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event) {
